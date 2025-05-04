@@ -1,5 +1,6 @@
 # ~/.bashrc
 clear && myfetch -c 8 -C " █"
+LS_COLORS+=':ow=01;33'
 eval "$(starship init bash)"
 [[ $- != *i* ]] && return
 alias lsd='eza --icons'

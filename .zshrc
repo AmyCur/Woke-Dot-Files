@@ -1,7 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+clear && myfetch -c 8 -C " █"
+echo ""
+
 alias c="clear"
+
+# Disable stupid background colours
 
 
 # Path to your Oh My Zsh installation.
@@ -112,5 +117,7 @@ source $ZSH/oh-my-zsh.sh
 #
 
 eval "$(zoxide init zsh)"
+eval "$(dircolors -b ~/.dircolors)"
 
+export LS_COLORS="ow=01;33"
 export PATH=$PATH:/home/dylan/.spicetify
