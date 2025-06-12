@@ -5,7 +5,9 @@ clear && myfetch -c 8 -C " █"
 echo ""
 
 alias c="clear"
-
+alias ss="~/start-server.sh"
+alias lg="lazygit"
+alias pt="cd ~/Documents/Nvim-Theme/ ; git add . ; git commit -m 'Auto Commit' ; git push"
 # Disable stupid background colours
 
 
@@ -120,4 +122,4 @@ eval "$(zoxide init zsh)"
 eval "$(dircolors -b ~/.dircolors)"
 
 export LS_COLORS="ow=01;33"
-export PATH=$PATH:/home/dylan/.spicetify
+export PATH=$PATH:/home/dylan/.spicetify:~/.config/nvim/bin
