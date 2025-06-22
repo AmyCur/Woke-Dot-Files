@@ -8,6 +8,7 @@ alias c="clear"
 alias ss="~/start-server.sh"
 alias lg="lazygit"
 alias pt="cd ~/Documents/Nvim-Theme/ ; git add . ; git commit -m 'Auto Commit' ; git push"
+alias notes="nvim ~/Notes/"
 # Disable stupid background colours
 
 

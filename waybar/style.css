@@ -1,32 +1,38 @@
-@import url('../../.cache/wal/colors-waybar.css');
+@import url('./colors-waybar.css');
 
 * {
     font-size:15px;
     font-family: "CodeNewRoman Nerd Font Propo";
-}
+  }
 window#waybar{
     all:unset;
 }
+.custom-spotify {
+    padding: 0em 1em;
+    margin: 0 4px;
+    background-color: alpha(#5BCEFA,0);
+    color: @foreground;
+    border-radius: 10px;
+}
 .modules-left {
-    color: white;
-    padding:7px;
+    padding: 4px 7px;
     margin:10 0 5 10;
     border-radius:10px;
-    background: alpha(@background,.6);
+    background: alpha(@transpink,1);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 .modules-center {
-    padding:7px;
+    padding: 4px 7px;
     margin:10 0 5 0;
     border-radius:10px;
-    background: alpha(@background,.6);
+    background: alpha(@transblue,1);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 .modules-right {
-    padding:7px;
+    padding: 4px 7px;
     margin: 10 10 5 0;
     border-radius:10px;
-    background: alpha(@background,.6);
+    background: alpha(@transpink,1);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 tooltip {
@@ -46,6 +52,8 @@ tooltip {
     padding: 0px 5px;
     color:@color7;
     transition: all .3s ease;
+    background: alpha(#F5A9B8, 0);
+    border-radius: 5px;
 }
 #custom-pacman{
     padding: 0px 5px;
@@ -54,7 +62,7 @@ tooltip {
 
 }
 #workspaces {
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 #workspaces button {
     all:unset;
@@ -155,8 +163,9 @@ tooltip {
 #tray{
     padding: 0px 5px;
     transition: all .3s ease; 
-
-}
+    background-color: alpha(#F5A9B8, .7);
+    border-radius: 10px;
+  }
 #tray menu * {
     padding: 0px 5px;
     transition: all .3s ease; 
