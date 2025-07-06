@@ -21,3 +21,4 @@ alias n="nvim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 PS1='[\u@\h \W]\$ '
+zsh

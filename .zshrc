@@ -120,7 +120,7 @@ source $ZSH/oh-my-zsh.sh
 #
 
 eval "$(zoxide init zsh)"
-eval "$(dircolors -b ~/.dircolors)"
+# eval "$(dircolors -b ~/.dircolors)"
 
 export LS_COLORS="ow=01;33"
 export PATH=$PATH:/home/dylan/.spicetify:~/.config/nvim/bin
