@@ -1,8 +1,6 @@
 #!/bin/bash
 
-DIR="${1:-$HOME}" # Use argument as directory, or default to $HOME
-
-SELECTED=$(find "$HOME/Documents/flatpak/" -maxdepth 1 -type f | wofi -n --dmenu --prompt "Pick a file:")
+SELECTED=$(find "$HOME/Documents/flatpak/" -maxdepth 1 -type f | wofi -n --dmenu --prompt "Search:")
 
 if [ -n "$SELECTED" ]; then
   # echo "You picked: $SELECTED"
