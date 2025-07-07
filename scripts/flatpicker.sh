@@ -1,9 +1,9 @@
 #!/bin/bash
 
-SELECTED=$(find "$HOME/Documents/flatpak/" -maxdepth 1 -type f | wofi -n --dmenu --prompt "Search:")
+OPTIONS="Vesktop"
 
-if [ -n "$SELECTED" ]; then
-  # echo "You picked: $SELECTED"
-  # Do something with the file, e.g., open it
-  echo "$SELECTED"
+CHOICE=$(echo -e "$OPTIONS" | wofi -n --dmenu --prompt "Search")
+
+if [ -n "$CHOICE" ]; then
+  echo "$CHOICE"
 fi
