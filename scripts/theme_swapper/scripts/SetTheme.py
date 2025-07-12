@@ -25,6 +25,7 @@ def change_file(THEME: str, BASE_FILE_NAME: str,FILE_NAME: str):
 def update_theme(THEME: str):
     change_file(THEME, COLOURS_FILE, "colours.css")
     change_file(THEME, WALLPAPER1, "wallpaper1.jpg")
+    os.system(f"notify-send \" Changed theme to f{THEME} \"")
     os.system("killall hyprpaper; hyprpaper")
 
 def main():
