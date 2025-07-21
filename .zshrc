@@ -1,7 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-clear && myfetch -c 8 -C " █"
+# clear && myfetch -c 8 -C " █"
+clear && fastfetch
 echo ""
 
 alias c="clear"
@@ -120,7 +121,10 @@ source $ZSH/oh-my-zsh.sh
 #
 
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
 # eval "$(dircolors -b ~/.dircolors)"
 
 export LS_COLORS="ow=01;33"
 export PATH=$PATH:/home/dylan/.spicetify:~/.config/nvim/bin
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
