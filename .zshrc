@@ -119,6 +119,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
+alias pass="nvim ~/pass"
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
