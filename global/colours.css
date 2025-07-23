@@ -1,10 +1,10 @@
 @define-color foreground #fff;
-@define-color background #0998C2;
+@define-color background #DD3D10;
 @define-color cursor #e5d9db;
 
-@define-color left-module #0998C2;
-@define-color centre-module #0998C2;
-@define-color right-module #0998C2;
+@define-color left-module #DD3D10;
+@define-color centre-module #DD3D10;
+@define-color right-module #DD3D10;
 
 @define-color noti-color #087DA1;
 @define-color noti-color-dark #065F7A;

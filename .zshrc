@@ -20,7 +20,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="agnoster"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -120,7 +120,6 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 alias pass="nvim ~/pass"
-
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 # eval "$(dircolors -b ~/.dircolors)"
@@ -129,3 +128,4 @@ export LS_COLORS="ow=01;33"
 export PATH=$PATH:/home/dylan/.spicetify:~/.config/nvim/bin
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
