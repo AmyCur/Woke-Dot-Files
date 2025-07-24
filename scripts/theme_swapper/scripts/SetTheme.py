@@ -22,12 +22,16 @@ def change_file(THEME: str, BASE_FILE_NAME: str,FILE_NAME: str):
     CURRENT_THEME_DIR = THEMES_DIR+THEME
     os.system(f"cp {CURRENT_THEME_DIR}/{FILE_NAME} {BASE_FILE_NAME}")
 
+def update_wallpper(OLD: str, NEW: str):
+    os.system(f"swww img <path/to/img> --transition-step <1 to 255> --transition-fps <1 to 255>")
+
 def update_theme(THEME: str):
     change_file(THEME, COLOURS_FILE, "colours.css")
     change_file(THEME, WALLPAPER1, "wallpaper1.jpg")
+    os.system(f"swww img --transition-type wipe --transition-pos 0.854,0.977 --transition-step 90 --transition-fps 60 {WALLPAPER1}")
+
     os.system(f"notify-send -t 700 \" Changed theme to {THEME} \"")
-    os.system("killall hyprpaper; hyprpaper")
-    os.system("wal -c")
+    # os.system("killall hyprpaper; hyprpaper")
 
 def main():
     theme = select_theme(CURRENT_DIR)

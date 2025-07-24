@@ -40,7 +40,7 @@ style_root = "bg:red fg:crust"
 format = '[ $user]($style)'
 
 [directory]
-style = "fg:red"
+style = "fg:yellow"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -143,9 +143,9 @@ show_notifications = true
 min_time_to_notify = 45000
 
 [palettes.undertale]
-orange = "#DD3D10"
+orange = "#FF964F"
 red = "#FF0000"
-
+yellow = "#DBE550"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
