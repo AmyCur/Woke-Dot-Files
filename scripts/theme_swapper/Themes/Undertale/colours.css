@@ -1,5 +1,6 @@
 @define-color foreground #FF964F;
-@define-color background #FF964F;
+@define-color background #000;
+@define-color border #FF964F;
 @define-color cursor #e5d9db;
 
 @define-color left-module #000;
@@ -11,10 +12,10 @@
 @define-color noti-color #D67E42;
 @define-color noti-color-dark #C4733D;
 
-@define-color tray #FFB689;
+@define-color tray #FF964F;
 @define-color tray-border #FFA66E;
 
-@define-color notif-border #fff;
+@define-color notif-border #FF964F;
 
 @define-color workspace-button #FFA66E;
 @define-color workspace-active #DBE550;
@@ -30,7 +31,7 @@
 
 
 @define-color clock-colour #FF964F;
-@define-color clock-colour-hover #f9dde2;
+@define-color clock-colour-hover #DBE550;
 
 @define-color button-text-colour #FF964F;
 

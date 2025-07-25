@@ -199,7 +199,9 @@
 
 .widget-mpris-player {
     padding: 5px 10px;
-    margin: 10px
+    margin: 10px;
+        background: black;
+
 }
 
 .widget-mpris-title {
