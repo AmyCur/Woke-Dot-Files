@@ -21,7 +21,8 @@ def change_file(BASE_FILE_NAME: str,FILE_NAME: str):
     CURRENT_THEME_DIR = THEMES_DIR+THEME+"/"
     os.system(f"cp {CURRENT_THEME_DIR}{FILE_NAME} {BASE_FILE_NAME}")
 
-def update_theme():
+def update_theme(theme:str):
+    THEME=theme
     change_file(COLOURS_FILE, "colours.css")
     change_file(WALLPAPER1, "wallpaper1.jpg")
     os.system(f"swww img --transition-type wipe --transition-pos 0.854,0.977 --transition-step 90 --transition-fps 60 {WALLPAPER1}")
@@ -31,7 +32,7 @@ def update_theme():
 def main():
     # If the user didnt enter a value
     if(len(THEME) != 0):
-        update_theme()
+        update_theme(THEME)
 
 if(__name__ == "__main__"):
     THEME=select_theme()

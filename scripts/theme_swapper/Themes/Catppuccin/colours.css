@@ -1,16 +1,23 @@
 @define-color foreground #ffffff;
-@define-color background #976a72;
+@define-color background #515782;
 @define-color cursor #e5d9db;
 
 @define-color left-module #515782;
 @define-color centre-module #515782;
 @define-color right-module #515782;
+@define-color border #515782;
+
+@define-color module-hover  #f9dde2;
+
+@define-color tray #6F77B3;
+@define-color tray-border #6F77B3;
 
 @define-color workspace-button #7881C2;
 @define-color workspace-active #ffffff;
 @define-color workspace-empty #515782;
 @define-color workspace-empty-hover #515782;
 @define-color workspace-button-hover #f5bde6;
+@define-color workspace-empty-active #fff;
 
 @define-color bluetooth #ffffff;
 @define-color network #ffffff;
@@ -30,39 +37,4 @@
 @define-color darkpink #A30262;
 
 @define-color refreshicon #b2fba5;
-@define-color refreshiconhover #ff746c;
-
-
-
-
-
-
-/* @define-color color0 #976a72; */
-/* @define-color color1 #baa5a9; */
-/* @define-color color2 #96b2b2; */
-/* @define-color color3 #b9baba; */
-/* @define-color color4 #bfbdbc; */
-/* @define-color color5 #bcbfbf; */
-/* @define-color color6 #bbbebe; */
-/* @define-color color7 #ffffff; */
-/* @define-color color8 #b4a4a7; */
-/* @define-color color9 #F9DDE2; */
-/* @define-color color10 #C9EEEE; */
-/* @define-color color11 #F7F9F9; */
-/* @define-color color12 #FFFCFB; */
-/* @define-color color13 #FBFFFF; */
-/* @define-color color14 #FAFEFE; */
-/* @define-color color15 #e5d9db; */
-
-/* @define-color rosewater #dc8a78; */
-/* @define-color flamingo #dd7878; */
-/* @define-color catpink #f5bde6; */
-/* @define-color mauve #8839ef; */
-/* @define-color catred #d20f39; */
-/* @define-color maroon #e64553; */
-/* @define-color peach #fe640b; */
-/* @define-color catyellow #df8e1d; */
-/**/
-/* @define-color transblue #000000; */
-/* @define-color transpink #000000; */
-
+@refine-color refreshiconhover #ff746c;
