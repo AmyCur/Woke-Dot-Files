@@ -37,4 +37,4 @@
 @define-color darkpink #A30262;
 
 @define-color refreshicon #b2fba5;
-@refine-color refreshiconhover #ff746c;
+@define-color refreshiconhover #ff746c;
