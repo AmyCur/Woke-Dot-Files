@@ -1,0 +1,195 @@
+@import url('/var/cache/theme/colours.css');
+
+window#waybar{
+    background: @background;
+}
+
+.modules-left {
+    background: alpha(@left-module,1);
+    border: solid 1px @border;
+}
+.modules-center {
+    background: alpha(@centre-module,1);
+    border: solid 1px @border;
+}
+.modules-right {
+    background: alpha(@right-module,1);
+    border: solid 1px @border;
+}
+
+.modules-center:hover, .modules-right:hover, .modules-left:hover{
+  background: alpha(@module-hover, 1);
+}
+
+.custom-spotify {
+    background-color: alpha(#5BCEFA,0);
+    color: @foreground;
+}
+
+tooltip {
+    background:@background;
+    color: @color7;
+}
+
+#clock{
+    color:@clock-colour;
+    transition: all .3s ease;
+    background: alpha(#F5A9B8, 0);
+}
+
+#clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+    transition: all .3s ease;
+    color:@clock-colour-hover;
+}
+
+#custom-notification {
+    transition: all .3s ease;
+    color:@button-text-colour;
+}
+
+@keyframes Underline {
+  from{text-decoration: none;}
+  to {text-decoration: underline;}
+}
+
+#custom-notes, #custom-flatpak, #custom-themer, #custom-wallpaper-changer{
+  text-decoration: none;  
+  color:@button-text-colour;
+}
+
+#custom-theme_refresher{
+  color:@refreshicon;  
+  transition: all .3s ease;
+}
+
+#custom-theme_refresher:hover{
+  transition: all .3s ease;
+  color:@refreshiconhover;
+}
+
+
+#custom-notes:hover,#custom-wallpaper-changer:hover, #custom-flatpak:hover, #custom-themer:hover, #custom-notification:hover,.custom-spotify:hover{
+      transition: all .3s ease;
+      color:@module-hover;
+}
+
+#custom-notes:hover, #custom-flatpak:hover, #custom-themer:hover{
+}
+
+#custom-pacman{
+    transition: all .3s ease;
+    color:@bluetooth;
+
+}
+#workspaces button {
+    all:unset;
+    color: alpha(@workspace-button,.5);
+
+    transition: all .2s ease;
+}
+#workspaces button:hover {
+    color:@workspace-button-hover;
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: @workspace-active;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#workspaces button.empty {
+    color:alpha(@workspace-empty, 0.1);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    color:alpha(@workspace-empty-hover, 0.5);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: alpha(@workspace-empty-active, 1);
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#bluetooth{
+    transition: all .3s ease;
+    color:@bluetooth;
+
+}
+#network{
+    transition: all .3s ease;
+    color:@network;
+
+}
+#battery{
+    transition: all .3s ease;
+    color:@battery;
+
+
+}
+#battery.charging {
+    color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+    color: #ffbe61;
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#group-expand{
+    transition: all .3s ease; 
+}
+#custom-expand{
+    padding: 0px 5px;
+    color:alpha(@foreground,.2);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
+    transition: all .3s ease; 
+}
+#custom-expand:hover{
+    color:rgba(255,255,255,.2);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
+}
+#custom-colorpicker{
+    padding: 0px 5px;
+}
+#cpu,#memory,#temperature{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+    color:@color7;
+
+}
+#custom-endpoint{
+    color:transparent;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
+
+}
+#tray{
+    padding: 5px;
+    transition: all .3s ease; 
+    background-color: alpha(@tray, 1);
+    border-radius: 10px;
+    border: solid 1px @tray-border;
+  }
+#tray menu * {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#tray menu separator {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#custom-s{
+  color: @foreground;
+}

@@ -20,3 +20,5 @@ alias n="nvim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 PS1='[\u@\h \W]\$ '
+. "/home/amy/.deno/env"
+source /home/amy/.local/share/bash-completion/completions/deno.bash

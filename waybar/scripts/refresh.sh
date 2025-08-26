@@ -1,12 +1,13 @@
 #!/bin/bash
 
 # Check if waybar is running
-if pgrep -x "waybar" > /dev/null; then
-    # If running, kill the waybar process
-    pkill -x "waybar"
+if pgrep -x "waybar" >/dev/null; then
+  # If running, kill the waybar process
+  pkill -x "waybar"
+  waybar
 else
-    # If not running, start waybar
-    waybar &
+  # If not running, start waybar
+  waybar &
 fi
 
-
+notify-send "Refreshed Waybar" -t 680 -i ~/Pictures/icons/tick.png

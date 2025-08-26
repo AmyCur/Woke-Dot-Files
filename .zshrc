@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/amy/.zsh/completions:"* ]]; then export FPATH="/home/amy/.zsh/completions:$FPATH"; fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -129,3 +131,7 @@ export PATH=$PATH:/home/dylan/.spicetify:~/.config/nvim/bin
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+. "/home/amy/.deno/env"
+# Initialize zsh completions (added by deno install script)
+autoload -Uz compinit
+compinit
