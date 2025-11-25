@@ -1,29 +1,35 @@
-@import url('~/.cache/wal/colors-waybar.css');
-@define-color mauve  @color9;
-@define-color red  @color9;
-@define-color lavender  @color7;
-@define-color text  @color7;
+@import url('/var/cache/theme/colours.css');
+
+
+@keyframes fadeIn {
+    0% {
+    }
+    100% {
+    }
+}
+
 * {
-    all:unset;
+    all:unset;    
+    transition: all .2s ease; 
     font-family: 'CodeNewRoman Nerd Font Mono', monospace;
     font-size: 18px;
     outline: none;
     border: none;
     text-shadow:none;
-    background-color:#ffe1ed;
+    background-color:transparent;
+    color: @button-text-colour;
 }
 
 window {
     all:unset;
     padding: 20px;
     border-radius: 0px;
-    background-color: alpha(@background,.5);
+    background-color: alpha(#383838,.3);
 }
 #inner-box {
     margin: 2px;
-    padding: 5px;
+    padding: 5px
     border: none;
-
 }
 #outer-box {    
     border: none;
@@ -33,58 +39,59 @@ window {
     padding: 30px;
     border: none;
 }
+
 #input {
     all:unset;
     margin-left:20px;
     margin-right:20px;
     margin-top:20px;
     padding: 20px;
-    border: none;
+    border: solid 1px @background;
     outline: none;
-    color: @text;
-    box-shadow: 1px 1px 5px rgba(0,0,0, .5);
-    border-radius:10;
-    background-color: alpha(@background,.2);
+    color: #fff;
+    background-color: alpha(@background,.0);
 }
+
 #input image {
-    border: none;
-    color: @red;
+    color: @search-icon;
     padding-right:10px;
 }
 #input * {
-    border: none;
     outline: none;
 }
 
 #input:focus {
     outline: none;
-    border: none;
 
-    border-radius:10;
 }
+
 #text {
     margin: 5px;
     border: none;
-    color: @text;
+    color: @foreground;
     outline: none;
 }
+
 #entry {
-    all:unset;
-    padding: 20 0 20 45;
+    border: solid 1px rgba(0,0,0,0);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
 }
+
 #entry arrow {
     border: none;
-    color: @lavender;
-
+    color: @arrow;
 }
 #entry:selected {
-    border: none;
-    border-radius: 20px;
-    background-color: alpha(@background,.2);
+    box-shadow: 1px 1px 5px rgba(255,255,255, .03);
+    border: solid 1px @module-hover;
+    background-color:transparent;
 }
 #entry:selected #text {
-    color: @mauve;
+    color: @module-hover;
 }
 #entry:drop(active) {
-    background-color: @lavender !important;
+    background-color: @arrow !important;
 }
+

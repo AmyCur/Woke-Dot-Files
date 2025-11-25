@@ -2,14 +2,14 @@
 @define-color background #976a72;
 @define-color cursor #e5d9db;
 
-@define-color left-module rgba(255,255,255,.3);
-@define-color centre-module rgba(0,0,0,0.3);
-@define-color right-module rgba(0,0,0,0.3);
+@define-color left-module #515782;
+@define-color centre-module #515782;
+@define-color right-module #515782;
 
 @define-color workspace-button #7881C2;
 @define-color workspace-active #ffffff;
 @define-color workspace-empty #515782;
-@define-color workspace-empty-hover @workspace-empty;
+@define-color workspace-empty-hover #515782;
 @define-color workspace-button-hover #f5bde6;
 
 @define-color bluetooth #ffffff;
@@ -17,10 +17,10 @@
 @define-color battery #ffffff;
 
 
-@define-color clock-colour #000;
+@define-color clock-colour #f5bde6;
 @define-color clock-colour-hover #f9dde2;
 
-@define-color button-text-colour #000000;
+@define-color button-text-colour #f5bde6;
 
 @define-color darkorange #D52D00;
 @define-color midorange #EF7627;

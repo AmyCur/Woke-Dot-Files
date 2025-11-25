@@ -1,2 +1,2 @@
-cd ~/Documents/web/cv/
-npm run dev
+# cd ~/Documents/web/cv/
+# npm run dev

@@ -1,7 +1,7 @@
 from subprocess import run
 import os
 
-POSSIBLE_THEMES = ["Catppuccin", "Nord", "Undertale"]
+POSSIBLE_THEMES = ["Catppuccin", "Nord", "Undertale", "CSH"]
 CURRENT_DIR = "/home/amy/.config/Woke-Dot-Files/scripts/theme_swapper/scripts/"
 THEMES_DIR = "/home/amy/Documents/Themes/"
 COLOURS_FILE = "/var/cache/theme/colours.css" 

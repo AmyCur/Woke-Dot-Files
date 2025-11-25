@@ -1,12 +1,5 @@
-/* @import url('~/.cache/wal/colors-waybar.css'); */
+@import url('/var/cache/theme/colours.css');
 
-@define-color mauve  @color9;
-@define-color red  #FF0000;
-@define-color search-icon  #f5a9b8;
-@define-color arrow  #FF0000;
-@define-color text  #000;
-@define-color selected  #fff;
-@define-color background  #5BCEFA;
 
 @keyframes fadeIn {
     0% {
@@ -23,15 +16,14 @@
     border: none;
     text-shadow:none;
     background-color:transparent;
-    color: #000;
+    color: @button-text-colour;
 }
-
 
 window {
     all:unset;
     padding: 20px;
     border-radius: 0px;
-    background-color: alpha(@background,.5);
+    background-color: alpha(black,.3);
 }
 #inner-box {
     margin: 2px;
@@ -46,47 +38,39 @@ window {
     padding: 30px;
     border: none;
 }
+
 #input {
     all:unset;
     margin-left:20px;
     margin-right:20px;
     margin-top:20px;
     padding: 20px;
-    border: none;
+    border: solid 1px @background;
     outline: none;
-    color: @text;
-    box-shadow: 1px 1px 5px rgba(0,0,0, .5);
-    border-radius:10;
-    background-color: alpha(@background,.2);
+    color: #fff;
+    background-color: alpha(@background,.0);
 }
+
 #input image {
-    border: none;
     color: @search-icon;
     padding-right:10px;
 }
 #input * {
-    border: none;
     outline: none;
 }
 
 #input:focus {
     outline: none;
-    border: none;
 
-    border-radius:10;
 }
+
 #text {
     margin: 5px;
     border: none;
-    color: @text;
+    color: @foreground;
     outline: none;
 }
-#text {
-    margin: 5px;
-    border: none;
-    color: @text;
-    outline: none;
-}
+
 #entry {
     border: none;
     margin: 5px;
@@ -99,13 +83,13 @@ window {
 }
 #entry:selected {
     box-shadow: 1px 1px 5px rgba(255,255,255, .03);
-    border: none;
-    border-radius: 20px;
+    border: solid 1px @module-hover;
     background-color:transparent;
 }
 #entry:selected #text {
-    color: @selected;
+    color: @module-hover;
 }
 #entry:drop(active) {
     background-color: @arrow !important;
 }
+

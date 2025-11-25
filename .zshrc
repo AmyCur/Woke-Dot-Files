@@ -12,8 +12,12 @@ alias ss="~/start-server.sh"
 alias lg="lazygit"
 alias pt="cd ~/Documents/Nvim-Theme/ ; git add . ; git commit -m 'Auto Commit' ; git push"
 alias notes="nvim ~/Notes/"
+alias pixel="python ~/Documents/Final_Project/Assets/_Code/external/CurrentPixelator.py"
+alias pr="nvim /home/amy/Documents/Final_Project/Assets/"
+alias kms="shutdown now"
 # Disable stupid background colours
-
+export EDITOR=nvim
+export VISUAL=nvim
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
